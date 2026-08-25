@@ -80,8 +80,10 @@ This repository is created for **learning and practicing SQL and relational data
 The database is normalized up to **3NF**.
 
 * **1NF:** All data is atomic, with no repeating or multi-valued fields.
-* **2NF:** There are no partial dependencies, especially in the `appointment` table with its composite key.
-* **3NF:** There are no unnecessary transitive dependencies. Department details are stored separately and linked using `dept_id`.
+  
+* 2NF:** There are no partial dependencies, especially in the `appointment` table with its composite key.
+  
+* 3NF:** There are no unnecessary transitive dependencies. Department details are stored separately and linked using `dept_id`.
 
 **Overall:** The database follows **1NF, 2NF, and 3NF**, which is sufficient for this hospital management system.
 
@@ -535,8 +537,12 @@ DESC faculty;
 -- ==========================================
 
 SELECT * FROM department;
+
 SELECT * FROM student;
+
 SELECT * FROM course;
+
 SELECT * FROM enrollment;
+
 SELECT * FROM faculty;
 
