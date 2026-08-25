@@ -87,23 +87,21 @@ The database is normalized up to **3NF**.
 
 **Overall:** The database follows **1NF, 2NF, and 3NF**, which is sufficient for this hospital management system.
 
--- ==========================================
+
 -- NORMALIZATION OF HOSPITAL DATABASE
+
 -- NORMAL FORM: 1NF -> 2NF -> 3NF
--- ==========================================
 
-
--- ==========================================
 -- CREATE DATABASE
--- ==========================================
+
 
 CREATE DATABASE hospital_demo;
 USE hospital_demo;
 
 
--- ==========================================
+
 -- 1NF
--- ==========================================
+
 -- In First Normal Form:
 -- 1. All attributes contain atomic values.
 -- 2. There are no repeating groups.
@@ -113,20 +111,22 @@ USE hospital_demo;
 -- and Room information are stored separately.
 
 
--- ==========================================
+
 -- 2NF
--- ==========================================
+
 -- In Second Normal Form:
+
 -- 1. Database must be in 1NF.
+
 -- 2. There should be no partial dependency.
---
+
 -- Patient, Doctor, Department, Appointment
+
 -- and Room data are separated into tables.
 
 
--- ==========================================
 -- DEPARTMENT TABLE
--- ==========================================
+
 
 CREATE TABLE department (
     dept_id INT PRIMARY KEY,
@@ -134,9 +134,9 @@ CREATE TABLE department (
 );
 
 
--- ==========================================
+
 -- PATIENT TABLE
--- ==========================================
+
 
 CREATE TABLE patient (
     patient_id INT PRIMARY KEY,
